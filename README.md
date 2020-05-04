@@ -24,7 +24,7 @@ cash flow: monthly rental income - monthly costs
 
 ## v1.1 ROI
 
-price - downpayment - (<YEARS OF LOAN> * 12 * monthly costs
+price - downpayment - (years of loan * 12 * monthly costs)
 
 ## v2. Opportunity to save
 
