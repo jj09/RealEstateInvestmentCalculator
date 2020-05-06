@@ -22,6 +22,11 @@
 
 cash flow: monthly rental income - monthly costs
 
+features:
+* (?) next to labels
+* defaults
+* ...
+
 ## v1.1 ROI
 
 price - downpayment - (years of loan * 12 * monthly costs)
