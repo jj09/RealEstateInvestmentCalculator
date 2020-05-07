@@ -34,7 +34,8 @@ TODOs:
     * [ ] polish headers
     * [ ] design icon
     * [ ] colors?
-
+    * [ ] status bar color
+ 
 ## v1.1 loan customization
 
 - enable choosing loan length (15 or 30 years)
