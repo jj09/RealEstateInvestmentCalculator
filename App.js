@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { StyleSheet, Text, View, TextInput, ScrollView, Button } from 'react-native';
+import MoneyInput from './components/moneyInput';
 
 export default function App() {
   const [cashFlow, setCashFlow] = useState('');
@@ -54,60 +55,46 @@ export default function App() {
       <Text style={styles.header}>Cash flow: ${cashFlow}</Text>
       <ScrollView style={styles.scrollView}>
         <View style={styles.container}>
-          <Text style={styles.label}>Purchase Price</Text>
-          <TextInput 
-            style={styles.input} 
-            onChangeText={changePurchasePrice}
-            value={purchasePrice} 
+          <MoneyInput
+            initialValue={purchasePrice}
+            label='Purchase Price'
+            onChangeHandler={changePurchasePrice}
             />
 
-          <Text style={styles.label}>Downpayment</Text>
-          <TextInput 
-            style={styles.input} 
-            onChangeText={changeDownpayment}
-            value={downpayment} 
+          <MoneyInput
+            initialValue={downpayment}
+            label='Downpayment'
+            onChangeHandler={changeDownpayment}
             />
 
-          <Text style={styles.label}>Rental Income</Text>
-          <TextInput 
-            style={styles.input} 
-            onChangeText={changeRentalIncome}
-            value={rentalIncome} 
+          <MoneyInput
+            initialValue={rentalIncome}
+            label='Rental Income'
+            onChangeHandler={changeRentalIncome}
             />
 
-          <View
-            style={{
-              borderBottomColor: 'white',
-              borderBottomWidth: 1,
-              margin: 5,
-            }}
-          />
-          <Text style={styles.label}>Mortgage Payment</Text>
-          <TextInput 
-            style={styles.input} 
-            onChangeText={changeMortgagePayment}
-            value={mortgagePayment} 
+          <MoneyInput
+            initialValue={mortgagePayment}
+            label='Mortgage Payment'
+            onChangeHandler={changeMortgagePayment}
             />
 
-          <Text style={styles.label}>HOA</Text>
-          <TextInput 
-            style={styles.input} 
-            onChangeText={changeHoa}
-            value={hoa} 
+          <MoneyInput
+            initialValue={hoa}
+            label='HOA'
+            onChangeHandler={changeHoa}
             />
 
-          <Text style={styles.label}>Tax</Text>
-          <TextInput 
-            style={styles.input} 
-            onChangeText={changeTax}
-            value={tax} 
+          <MoneyInput
+            initialValue={tax}
+            label='Tax'
+            onChangeHandler={changeTax}
             />
 
-          <Text style={styles.label}>Insurance</Text>
-          <TextInput 
-            style={styles.input} 
-            onChangeText={changeInsurance}
-            value={insurance} 
+          <MoneyInput
+            initialValue={insurance}
+            label='Insurance'
+            onChangeHandler={changeInsurance}
             />
 
           <Button 
