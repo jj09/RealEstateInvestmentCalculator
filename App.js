@@ -7,17 +7,23 @@ export default function App() {
   const [roi, setRoi] = useState('');
 
   const calculate = () => {
+    const formatter = new Intl.NumberFormat('en-US', {
+      style: 'currency',
+      currency: 'USD',
+      minimumFractionDigits: 0,
+    });
+
     const ri = Number(rentalIncome);
     const mp = Number(mortgagePayment);
     const h = Number(hoa);
     const t = Number(tax);
     const i = Number(insurance);
     const cf = ri - mp - h - t - i;
-    setCashFlow(cf);
+    setCashFlow(formatter.format(cf));
 
     const pp = Number(purchasePrice);
     const dp = Number(downpayment);
-    setRoi(pp - dp + (30*12*cf));
+    setRoi(formatter.format(pp - dp + (30*12*cf)));
   };
 
   const [purchasePrice, setPurchasePrice] = useState('500000');
@@ -59,8 +65,8 @@ export default function App() {
     <View style={styles.container}>
       <Text style={styles.header}>Real Estate Investment Calculator</Text>
       <View style={styles.results}>
-        <Text style={styles.subheader}>Cash flow: ${cashFlow}</Text>
-        <Text style={styles.subheader}>ROI (30 years): ${roi}</Text>
+        <Text style={styles.subheader}>Cash flow: {cashFlow}</Text>
+        <Text style={styles.subheader}>ROI (30 years): {roi}</Text>
       </View>
       <Button 
             title='Calculate' 
@@ -138,13 +144,15 @@ const styles = StyleSheet.create({
   header: {
     fontSize: 22,
     textAlignVertical: 'top',
-    padding: 20,
-    color: '#78a4c3'
+    paddingTop: 20,
+    color: '#78a4c3',
+    width: '100%',
+    textAlign: 'center',
   },
   subheader: {
     fontSize: 18,
     textAlignVertical: 'top',
-    padding: 20,
+    padding: 5,
     color: '#78a4c3'
   },
   label: {
@@ -170,6 +178,9 @@ const styles = StyleSheet.create({
     width: '100%',
   },
   results: {
-    flexDirection: 'row',
+    flexDirection: 'column',
+    textAlign: 'left',
+    width: '100%',
+    padding: 5,
   }
 });

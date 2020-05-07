@@ -4,9 +4,18 @@ import { StyleSheet, Text, TextInput, View, Button } from 'react-native';
 export default function MoneyInput({initialValue, label, onChangeHandler}) {
     const [value, setValue] = useState(initialValue);
     const changeHandler = val => {
-        setValue(val);
-        onChangeHandler(val);
+        const num = val.replace(/[^A-Za-z0-9]/g, '');
+        console.info(num);
+        const formatted = num && formatter.format(num);
+        setValue(formatted);
+        onChangeHandler(num);
     };
+    
+    const formatter = new Intl.NumberFormat('en-US', {
+      style: 'currency',
+      currency: 'USD',
+      minimumFractionDigits: 0,
+    });
     
     return (
         <View>
@@ -15,6 +24,7 @@ export default function MoneyInput({initialValue, label, onChangeHandler}) {
             style={styles.input} 
             onChangeText={changeHandler}
             defaultValue={initialValue}
+            value={value}
             keyboardType='numeric'
             onFocus={() => changeHandler('')}
             />
