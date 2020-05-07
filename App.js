@@ -4,6 +4,7 @@ import MoneyInput from './components/moneyInput';
 
 export default function App() {
   const [cashFlow, setCashFlow] = useState('');
+  const [roi, setRoi] = useState('');
 
   const calculate = () => {
     const ri = Number(rentalIncome);
@@ -11,7 +12,12 @@ export default function App() {
     const h = Number(hoa);
     const t = Number(tax);
     const i = Number(insurance);
-    setCashFlow(ri - mp - h - t - i);
+    const cf = ri - mp - h - t - i;
+    setCashFlow(cf);
+
+    const pp = Number(purchasePrice);
+    const dp = Number(downpayment);
+    setRoi(pp - dp + (30*12*cf));
   };
 
   const [purchasePrice, setPurchasePrice] = useState('500000');
@@ -53,6 +59,11 @@ export default function App() {
     <View style={styles.container}>
       <Text style={styles.header}>Real Estate Investment Calculator</Text>
       <Text style={styles.header}>Cash flow: ${cashFlow}</Text>
+      <Text style={styles.header}>ROI (30 years): ${roi}</Text>
+      <Button 
+            title='Calculate' 
+            onPress={calculate}
+            />
       <ScrollView style={styles.scrollView}>
         <View style={styles.container}>
           <MoneyInput
@@ -95,11 +106,6 @@ export default function App() {
             initialValue={insurance}
             label='Insurance'
             onChangeHandler={changeInsurance}
-            />
-
-          <Button 
-            title='Calculate' 
-            onPress={calculate}
             />
 
           {/* <Text style={styles.label}>Vacancy</Text>
