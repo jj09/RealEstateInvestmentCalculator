@@ -23,15 +23,25 @@
 cash flow: monthly rental income - monthly costs
 
 features:
-* (?) next to labels
 * defaults
+* easy clear
+* formatting fileds $$$: `$500`
+* (?) next to labels
 * ...
 
 ## v1.1 ROI
 
-price - downpayment - (years of loan * 12 * monthly costs)
+- price - downpayment - (years of loan * 12 * monthly costs)
 
-## v2. Opportunity to save
+## v1.2 loan customization
+
+- enable choosing loan length (15 or 30 years)
+- set interest
+- downpayment (+ 10% closing costs)
+- [maybe] downpayment as % of purchase price(?)
+- purchase price rename to total investment
+
+## v2. Opportunity to save calculations
 
     - in app?
     - by email?    
