@@ -18,7 +18,7 @@ export default function App() {
     const h = Number(hoa);
     const t = Number(tax);
     const i = Number(insurance);
-    const cf = ri - mp - h - t - i;
+    const cf = ri - mp - h - t - i - (hoa>0 ? 0.1*ri : 0.15*ri);
     setCashFlow(formatter.format(cf));
 
     const pp = Number(purchasePrice);

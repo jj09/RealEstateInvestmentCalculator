@@ -5,10 +5,10 @@ export default function MoneyInput({initialValue, label, onChangeHandler}) {
     const [value, setValue] = useState(initialValue);
     const changeHandler = val => {
         const num = val.replace(/[^A-Za-z0-9]/g, '');
-        console.info(num);
+        onChangeHandler(num);
+
         const formatted = num && formatter.format(num);
         setValue(formatted);
-        onChangeHandler(num);
     };
     
     const formatter = new Intl.NumberFormat('en-US', {
