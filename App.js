@@ -58,8 +58,10 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Text style={styles.header}>Real Estate Investment Calculator</Text>
-      <Text style={styles.header}>Cash flow: ${cashFlow}</Text>
-      <Text style={styles.header}>ROI (30 years): ${roi}</Text>
+      <View style={styles.results}>
+        <Text style={styles.subheader}>Cash flow: ${cashFlow}</Text>
+        <Text style={styles.subheader}>ROI (30 years): ${roi}</Text>
+      </View>
       <Button 
             title='Calculate' 
             onPress={calculate}
@@ -139,6 +141,12 @@ const styles = StyleSheet.create({
     padding: 20,
     color: '#78a4c3'
   },
+  subheader: {
+    fontSize: 18,
+    textAlignVertical: 'top',
+    padding: 20,
+    color: '#78a4c3'
+  },
   label: {
     fontSize: 18,
     color: '#938598',
@@ -161,4 +169,7 @@ const styles = StyleSheet.create({
     flex: 1,
     width: '100%',
   },
+  results: {
+    flexDirection: 'row',
+  }
 });

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { StyleSheet, Text, TextInput, View } from 'react-native';
+import { StyleSheet, Text, TextInput, View, Button } from 'react-native';
 
 export default function MoneyInput({initialValue, label, onChangeHandler}) {
     const [value, setValue] = useState(initialValue);
@@ -15,20 +15,14 @@ export default function MoneyInput({initialValue, label, onChangeHandler}) {
             style={styles.input} 
             onChangeText={changeHandler}
             defaultValue={initialValue}
+            keyboardType='numeric'
+            onFocus={() => changeHandler('')}
             />
         </View>
     );
 }
 
 const styles = StyleSheet.create({
-    container: {
-      flex: 1,
-      padding: 20,
-      backgroundColor: '#090f18',
-      alignItems: 'center',
-      justifyContent: 'center',
-      paddingBottom: 50,
-    },
     label: {
       fontSize: 18,
       color: '#938598',
