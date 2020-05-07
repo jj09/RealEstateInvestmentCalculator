@@ -21,6 +21,7 @@
 | ROI	 | $221,000.00 |
 
 cash flow: monthly rental income - monthly costs
+ROI: purchase price - downpayment + cash flow
 
 features:
 * defaults
@@ -29,11 +30,7 @@ features:
 * (?) next to labels
 * ...
 
-## v1.1 ROI
-
-- price - downpayment - (years of loan * 12 * monthly costs)
-
-## v1.2 loan customization
+## v1.1 loan customization
 
 - enable choosing loan length (15 or 30 years)
 - set interest

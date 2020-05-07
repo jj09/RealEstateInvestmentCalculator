@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { StyleSheet, Text, View, TextInput, ScrollView, Button } from 'react-native';
-import MoneyInput from './components/moneyInput';
+import MoneyInput from './components/MoneyInput';
 
 export default function App() {
   const [cashFlow, setCashFlow] = useState('');
