@@ -20,15 +20,20 @@
 | cash flow	 | $(358.33) |
 | ROI	 | $221,000.00 |
 
-cash flow: monthly rental income - monthly costs
-ROI: purchase price - downpayment + cash flow
+`cash flow: monthly rental income - monthly costs`
 
-features:
-* defaults
-* easy clear
-* formatting fileds $$$: `$500`
-* (?) next to labels
-* ...
+`ROI: purchase price - downpayment + cash flow`
+
+TODOs:
+* [+] defaults
+* [+] easy clear
+* [+] currency formatting fileds
+* [ ] (?) next to labels
+* [ ] make calculations working without submit button
+* [ ] polish
+    * [ ] polish headers
+    * [ ] design icon
+    * [ ] colors?
 
 ## v1.1 loan customization
 
@@ -40,7 +45,7 @@ features:
 
 ## v2. Opportunity to save calculations
 
-    - in app?
-    - by email?    
-    - send to dropbox as spreadsheet?
-    - send to gdocs as spreadsheet?
+- in app?
+- by email?    
+- send to dropbox as spreadsheet?
+- send to gdocs as spreadsheet?
