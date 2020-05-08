@@ -2,7 +2,13 @@ import React, { useState } from 'react';
 import { StyleSheet, Text, TextInput, View, Button } from 'react-native';
 
 export default function MoneyInput({initialValue, label, onChangeHandler}) {
-    const [value, setValue] = useState(initialValue);
+    const formatter = new Intl.NumberFormat('en-US', {
+      style: 'currency',
+      currency: 'USD',
+      minimumFractionDigits: 0,
+    });
+
+    const [value, setValue] = useState(formatter.format(initialValue));
     const changeHandler = val => {
         const num = val.replace(/[^A-Za-z0-9]/g, '');
         onChangeHandler(num);
@@ -11,11 +17,7 @@ export default function MoneyInput({initialValue, label, onChangeHandler}) {
         setValue(formatted);
     };
     
-    const formatter = new Intl.NumberFormat('en-US', {
-      style: 'currency',
-      currency: 'USD',
-      minimumFractionDigits: 0,
-    });
+    
     
     return (
         <View>

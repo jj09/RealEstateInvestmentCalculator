@@ -3,8 +3,8 @@ import { StyleSheet, Text, View, TextInput, ScrollView, Button } from 'react-nat
 import MoneyInput from './components/MoneyInput';
 
 export default function App() {
-  const [cashFlow, setCashFlow] = useState('');
-  const [roi, setRoi] = useState('');
+  const [cashFlow, setCashFlow] = useState('$400');
+  const [roi, setRoi] = useState('$206,000');
 
   const calculate = () => {
     const formatter = new Intl.NumberFormat('en-US', {
@@ -19,6 +19,7 @@ export default function App() {
     const t = Number(tax);
     const i = Number(insurance);
     const cf = ri - mp - h - t - i - (hoa>0 ? 0.1*ri : 0.15*ri);
+    console.info(cf);
     setCashFlow(formatter.format(cf));
 
     const pp = Number(purchasePrice);
@@ -26,40 +27,49 @@ export default function App() {
     setRoi(formatter.format(pp - dp + (30*12*cf)));
   };
 
-  const [purchasePrice, setPurchasePrice] = useState('500000');
+  let purchasePrice = '500000';
   const changePurchasePrice = newPrice => {
-    setPurchasePrice(newPrice);
+    purchasePrice = newPrice;
+    calculate();
   };
 
-  const [downpayment, setDownpayment] = useState('150000');
+  let downpayment = '150000';
   const changeDownpayment = newVal => {
-    setDownpayment(newVal);
+    downpayment = newVal;
+    calculate();
   };
 
-  const [rentalIncome, setRentalIncome] = useState('2500');
+  let rentalIncome = '2500';
   const changeRentalIncome = newVal => {
-    setRentalIncome(newVal);
+    rentalIncome = newVal;
+    calculate();
   };
 
-  const [mortgagePayment, setMortgagePayment] = useState('1700');
+  let mortgagePayment = '1700';
   const changeMortgagePayment = newVal => {
-    setMortgagePayment(newVal);
+    mortgagePayment = newVal;
+    calculate();
   };
 
-  const [hoa, setHoa] = useState('500');
+  let hoa = '500';
   const changeHoa = newVal => {
-    setHoa(newVal);
+    hoa = newVal;
+    calculate();
   };
 
-  const [tax, setTax] = useState('400');
+  let tax = '400';
   const changeTax = newVal => {
-    setTax(newVal);
+    tax = newVal;
+    calculate();
   };
 
-  const [insurance, setInsurance] = useState('50');
+  let insurance = '50';
   const changeInsurance = newVal => {
-    setInsurance(newVal);
+    insurance = newVal;
+    calculate();
   };
+
+  //setTimeout(calculate, 1);  // TODO: get rid of timeout
 
   return (
     <View style={styles.container}>
@@ -68,10 +78,6 @@ export default function App() {
         <Text style={styles.subheader}>Cash flow: {cashFlow}</Text>
         <Text style={styles.subheader}>ROI (30 years): {roi}</Text>
       </View>
-      <Button 
-            title='Calculate' 
-            onPress={calculate}
-            />
       <ScrollView style={styles.scrollView}>
         <View style={styles.container}>
           <MoneyInput
