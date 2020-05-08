@@ -234,7 +234,7 @@ const styles = StyleSheet.create({
   modalClose: {
     marginTop: 5,
     marginBottom: 10,
-    marginLeft: Dimensions.get('window').width/2 + 50,
+    marginLeft: Dimensions.get('window').width/2,
   },
   modalText: {
     color: '#78a4c3',
