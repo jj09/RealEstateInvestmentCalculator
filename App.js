@@ -69,8 +69,6 @@ export default function App() {
     calculate();
   };
 
-  //setTimeout(calculate, 1);  // TODO: get rid of timeout
-
   return (
     <View style={styles.container}>
       <Text style={styles.header}>Real Estate Investment Calculator</Text>
