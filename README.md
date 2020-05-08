@@ -29,9 +29,11 @@ TODOs:
 * [+] easy clear
 * [+] currency formatting fileds
 * [+] make calculations working without submit button
-* [ ] (?) next to labels
+* [+] (?) next to labels
+* [ ] add (?) descriptions where needed
 * [ ] polish
     * [ ] polish headers
+    * [ ] polish modal
     * [ ] design icon
     * [ ] colors?
     * [ ] status bar color

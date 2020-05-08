@@ -208,23 +208,6 @@ const styles = StyleSheet.create({
     padding: 5,
     color: '#78a4c3'
   },
-  label: {
-    fontSize: 18,
-    color: '#938598',
-    textAlign: 'left',
-    width: 300,
-    padding: 5,
-    marginTop: 10,
-  },
-  input: {
-    borderWidth: 1,
-    borderColor: '#ddd',
-    color: '#ccc',
-    padding: 10,
-    fontSize: 18,
-    borderRadius: 6,
-    width: 300,
-  },
   scrollView: {
     margin: 0,
     flex: 1,
@@ -249,9 +232,9 @@ const styles = StyleSheet.create({
     borderWidth: 1,
   },
   modalClose: {
-      marginTop: 5,
-      marginBottom: 10,
-      marginLeft: Dimensions.get('window').width/2 + 50,
+    marginTop: 5,
+    marginBottom: 10,
+    marginLeft: Dimensions.get('window').width/2 + 50,
   },
   modalText: {
     color: '#78a4c3',
@@ -259,12 +242,12 @@ const styles = StyleSheet.create({
     padding: 5,
   },
   modalToggle: {
-      borderWidth: 1,
-      borderColor: '#ddd',
-      color: '#ddd',
-      padding: 2,
-      borderRadius: 5,
-      marginLeft: 10,
-      alignSelf: 'center',
+    borderWidth: 1,
+    borderColor: '#ddd',
+    color: '#ddd',
+    padding: 2,
+    borderRadius: 5,
+    marginLeft: 10,
+    alignSelf: 'center',
   },
 });

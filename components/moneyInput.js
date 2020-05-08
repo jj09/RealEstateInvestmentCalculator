@@ -43,13 +43,6 @@ export default function MoneyInput({initialValue, label, onChangeHandler, onHelp
 }
 
 const styles = StyleSheet.create({
-  hintIcon: {
-    color: '#78a4c3',
-    fontSize: 18,
-    marginLeft: 10,
-    backgroundColor: 'pink',
-    marginTop: 10,
-  },
   label: {
     fontSize: 18,
     color: '#938598',
