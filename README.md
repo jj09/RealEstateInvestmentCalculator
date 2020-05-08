@@ -25,11 +25,11 @@
 `ROI: purchase price - downpayment + cash flow`
 
 TODOs:
-* [+] defaults
-* [+] easy clear
-* [+] currency formatting fileds
-* [+] make calculations working without submit button
-* [+] (?) next to labels
+* [x] defaults
+* [x] easy clear
+* [x] currency formatting fileds
+* [x] make calculations working without submit button
+* [x] (?) next to labels
 * [ ] add (?) descriptions where needed
 * [ ] polish
     * [ ] polish headers
