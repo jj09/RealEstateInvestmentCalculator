@@ -18,8 +18,10 @@ export default function App() {
     const h = Number(hoa);
     const t = Number(tax);
     const i = Number(insurance);
-    const cf = ri - mp - h - t - i - (hoa>0 ? 0.1*ri : 0.15*ri);
-    console.info(cf);
+    const v = Number(vacancy);
+    const r = Number(repairs);
+    const ce = Number(capEx);
+    const cf = ri - mp - h - t - i - v - r -ce;
     setCashFlow(formatter.format(cf));
 
     const pp = Number(purchasePrice);
@@ -66,6 +68,24 @@ export default function App() {
   let insurance = '50';
   const changeInsurance = newVal => {
     insurance = newVal;
+    calculate();
+  };
+
+  let vacancy = '125';
+  const changeVacancy = newVal => {
+    vacancy = newVal;
+    calculate();
+  };
+
+  let repairs = '125';
+  const changeRepairs = newVal => {
+    repairs = newVal;
+    calculate();
+  };
+
+  let capEx = '0';
+  const changeCapEx = newVal => {
+    capEx = newVal;
     calculate();
   };
 
@@ -118,6 +138,24 @@ export default function App() {
             initialValue={insurance}
             label='Insurance'
             onChangeHandler={changeInsurance}
+            />
+
+          <MoneyInput
+            initialValue={vacancy}
+            label='Vacancy'
+            onChangeHandler={changeVacancy}
+            />
+            
+          <MoneyInput
+            initialValue={repairs}
+            label='Repairs'
+            onChangeHandler={changeRepairs}
+            />
+          
+          <MoneyInput
+            initialValue={capEx}
+            label='Capital Expenditures'
+            onChangeHandler={changeCapEx}
             />
 
           {/* <Text style={styles.label}>Vacancy</Text>
