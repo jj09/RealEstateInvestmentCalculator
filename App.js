@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
-import { StyleSheet, Text, View, TextInput, ScrollView, Button } from 'react-native';
+import { StyleSheet, Text, View, ScrollView, Keyboard, Modal, TouchableWithoutFeedback } from 'react-native';
 import MoneyInput from './components/MoneyInput';
+import {MaterialIcons} from '@expo/vector-icons';
 
 export default function App() {
   const [cashFlow, setCashFlow] = useState('$400');
   const [roi, setRoi] = useState('$206,000');
+  const [modalOpen, setModalOpen] = useState(false);
+  const [modalText, setModalText] = useState('');
 
   const calculate = () => {
     const formatter = new Intl.NumberFormat('en-US', {
@@ -156,17 +159,25 @@ export default function App() {
             initialValue={capEx}
             label='Capital Expenditures'
             onChangeHandler={changeCapEx}
+            onHelpClick={() => {
+              setModalOpen(true);
+              setModalText('Big repairs like roof, flooring, water heater, plumbing, etc.');
+            }}
             />
 
-          {/* <Text style={styles.label}>Vacancy</Text>
-          <TextInput style={styles.input} />
-
-          <Text style={styles.label}>Repairs</Text>
-          <TextInput style={styles.input} />
-
-          <Text style={styles.label}>CapEx</Text>
-          <TextInput style={styles.input} /> */}
-          
+          <Modal visible={modalOpen} animationType='slide'>
+              <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
+                  <View style={styles.modalContent}>
+                      <MaterialIcons
+                          name='close'
+                          size={24}
+                          style={{...styles.modalToggle, ...styles.modalClose}}
+                          onPress={() => setModalOpen(false)}
+                          />
+                      <Text>{modalText}</Text>
+                  </View>
+              </TouchableWithoutFeedback>
+          </Modal>
         </View>
 
       </ScrollView>
@@ -224,5 +235,22 @@ const styles = StyleSheet.create({
     textAlign: 'left',
     width: '100%',
     padding: 5,
-  }
+  },
+  modalContent: {
+    flex: 1,
+    marginTop: 20,
+  },
+  modalClose: {
+      marginTop: 20,
+      marginBottom: 0,
+  },
+  modalToggle: {
+      borderWidth: 1,
+      borderColor: '#ddd',
+      color: '#ddd',
+      padding: 2,
+      borderRadius: 5,
+      marginLeft: 10,
+      alignSelf: 'center',
+  },
 });

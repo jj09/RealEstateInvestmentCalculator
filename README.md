@@ -28,8 +28,8 @@ TODOs:
 * [+] defaults
 * [+] easy clear
 * [+] currency formatting fileds
+* [+] make calculations working without submit button
 * [ ] (?) next to labels
-* [ ] make calculations working without submit button
 * [ ] polish
     * [ ] polish headers
     * [ ] design icon

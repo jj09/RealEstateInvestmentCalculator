@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import { StyleSheet, Text, TextInput, View, Button } from 'react-native';
+import { StyleSheet, Text, TextInput, View } from 'react-native';
+import {MaterialIcons} from '@expo/vector-icons';
 
-export default function MoneyInput({initialValue, label, onChangeHandler}) {
+export default function MoneyInput({initialValue, label, onChangeHandler, onHelpClick}) {
     const formatter = new Intl.NumberFormat('en-US', {
       style: 'currency',
       currency: 'USD',
@@ -17,11 +18,18 @@ export default function MoneyInput({initialValue, label, onChangeHandler}) {
         setValue(formatted);
     };
     
-    
-    
     return (
         <View>
-          <Text style={styles.label}>{label}</Text>
+          
+          <View style={styles.labelContainer}>
+            <Text style={styles.label}>{label}</Text>
+            {onHelpClick && <MaterialIcons
+                name='question'
+                size={12}
+                style={styles.modalToggle}
+                onPress={onHelpClick}
+                />}
+          </View>
           <TextInput 
             style={styles.input} 
             onChangeText={changeHandler}
@@ -35,22 +43,40 @@ export default function MoneyInput({initialValue, label, onChangeHandler}) {
 }
 
 const styles = StyleSheet.create({
-    label: {
-      fontSize: 18,
-      color: '#938598',
-      textAlign: 'left',
-      width: 300,
-      padding: 5,
-      marginTop: 10,
-    },
-    input: {
+  hintIcon: {
+    color: '#78a4c3',
+    fontSize: 18,
+    marginLeft: 10,
+    backgroundColor: 'pink',
+    marginTop: 10,
+  },
+  label: {
+    fontSize: 18,
+    color: '#938598',
+    textAlign: 'left',
+  },
+  labelContainer: {
+    padding: 5,
+    flexDirection: 'row',
+    marginTop: 10,
+  },
+  input: {
+    borderWidth: 1,
+    borderColor: '#ddd',
+    color: '#ccc',
+    padding: 10,
+    fontSize: 18,
+    borderRadius: 6,
+    width: 300,
+  },
+  modalToggle: {
       borderWidth: 1,
       borderColor: '#ddd',
-      color: '#ccc',
-      padding: 10,
-      fontSize: 18,
-      borderRadius: 6,
-      width: 300,
-    },
-  });
+      color: '#ddd',
+      padding: 2,
+      borderRadius: 5,
+      marginLeft: 10,
+      alignSelf: 'center',
+  },
+});
   
