@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { StyleSheet, Text, View, ScrollView, Keyboard, Modal, TouchableWithoutFeedback } from 'react-native';
+import { StyleSheet, Text, View, ScrollView, Keyboard, Dimensions, Modal, TouchableWithoutFeedback } from 'react-native';
 import MoneyInput from './components/MoneyInput';
 import {MaterialIcons} from '@expo/vector-icons';
 
@@ -165,8 +165,8 @@ export default function App() {
             }}
             />
 
-          <Modal visible={modalOpen} animationType='slide'>
-              <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
+          <Modal transparent visible={modalOpen} animationType='slide'>
+              <TouchableWithoutFeedback onPress={() => setModalOpen(false)} style={{backgroundColor: 'red'}}>
                   <View style={styles.modalContent}>
                       <MaterialIcons
                           name='close'
@@ -174,7 +174,7 @@ export default function App() {
                           style={{...styles.modalToggle, ...styles.modalClose}}
                           onPress={() => setModalOpen(false)}
                           />
-                      <Text>{modalText}</Text>
+                      <Text style={styles.modalText}>{modalText}</Text>
                   </View>
               </TouchableWithoutFeedback>
           </Modal>
@@ -238,11 +238,25 @@ const styles = StyleSheet.create({
   },
   modalContent: {
     flex: 1,
-    marginTop: 20,
+    marginTop: Dimensions.get('window').height/2 - 100,
+    marginBottom: Dimensions.get('window').height/2 - 100,
+    marginLeft: 50,
+    marginRight: 50,
+    padding: 10,
+    backgroundColor: '#090f18',
+    color: '#78a4c3',
+    borderColor: '#ddd',
+    borderWidth: 1,
   },
   modalClose: {
-      marginTop: 20,
-      marginBottom: 0,
+      marginTop: 5,
+      marginBottom: 10,
+      marginLeft: Dimensions.get('window').width/2 + 50,
+  },
+  modalText: {
+    color: '#78a4c3',
+    fontSize: 18,
+    padding: 5,
   },
   modalToggle: {
       borderWidth: 1,
