@@ -31,12 +31,14 @@ TODOs:
 * [x] make calculations working without submit button
 * [x] (?) next to labels
 * [x] add (?) descriptions where needed
+* [ ] create an icon
 * [ ] polish
     * [ ] polish headers
     * [ ] polish modal
     * [ ] design icon
     * [ ] colors?
     * [ ] status bar color
+    * [ ] beautify icon (use app colors)
 * publish
     * [ ] App Store (https://www.youtube.com/watch?v=6IPr7oOugTs)
     * [ ] Google Play
