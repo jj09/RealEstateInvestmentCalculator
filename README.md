@@ -37,9 +37,19 @@ TODOs:
     * [ ] design icon
     * [ ] colors?
     * [ ] status bar color
+* publish
+    * [ ] App Store (https://www.youtube.com/watch?v=6IPr7oOugTs)
+    * [ ] Google Play
+    * [ ] Setup Codepush with App Center for updates without store release 
  
-## v1.1 loan customization
+## v1.1 monetization
 
+* Google ads (admob)?
+* fb ads?
+
+## v1.2 loan customization
+
+- add splashscreen
 - enable choosing loan length (15 or 30 years)
 - set interest
 - downpayment (+ 10% closing costs)
@@ -52,3 +62,22 @@ TODOs:
 - by email?    
 - send to dropbox as spreadsheet?
 - send to gdocs as spreadsheet?
+
+## v99. Backlog
+
+- add logging to measure CTR for (?) next to labels
+
+# notes
+
+## marketing
+
+* where audience is hanging out on the internet?
+    + biggerpockets.com
+    + roofstock
+    + ...
+
+* content marketing: https://designmodo.com/update-emails 
+
+# references
+
+* [Investment Property ROI spreadsheet](https://docs.google.com/spreadsheets/d/1s7BwjC9fE213bOYVq2m0GkjBO1o4IVzl9MDPqR6a9vo/edit#gid=1795265665)

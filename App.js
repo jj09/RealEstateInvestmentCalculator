@@ -92,6 +92,13 @@ export default function App() {
     calculate();
   };
 
+  const getModalCallback = modalText => {
+    return () => {
+        setModalOpen(true);
+        setModalText(modalText);
+      };
+  };
+
   return (
     <View style={styles.container}>
       <Text style={styles.header}>Real Estate Investment Calculator</Text>
@@ -117,6 +124,7 @@ export default function App() {
             initialValue={rentalIncome}
             label='Rental Income'
             onChangeHandler={changeRentalIncome}
+            onHelpClick={getModalCallback('Monthly Rental Income.')}
             />
 
           <MoneyInput
@@ -127,42 +135,44 @@ export default function App() {
 
           <MoneyInput
             initialValue={hoa}
-            label='HOA'
+            label='HOA dues'
             onChangeHandler={changeHoa}
+            onHelpClick={getModalCallback('If you are buying a condo, you have to pay HOA. In case of buying house or townhouse usually you will not.')}
             />
 
           <MoneyInput
             initialValue={tax}
             label='Tax'
             onChangeHandler={changeTax}
+            onHelpClick={getModalCallback('Monthly property tax.')}
             />
 
           <MoneyInput
             initialValue={insurance}
             label='Insurance'
             onChangeHandler={changeInsurance}
+            onHelpClick={getModalCallback('Monthly insurance payment. If you pay per year, then just divide by 12.')}
             />
 
           <MoneyInput
             initialValue={vacancy}
             label='Vacancy'
             onChangeHandler={changeVacancy}
+            onHelpClick={getModalCallback('Estimated monthly amount spend on vacancies. It is recommended to allocate 5% of monthly rent for vacancies.')}
             />
             
           <MoneyInput
             initialValue={repairs}
             label='Repairs'
             onChangeHandler={changeRepairs}
+            onHelpClick={getModalCallback('Estimated monthly amount spend on repairs. It is recommended to allocate 5% of monthly rent for repairs.')}
             />
           
           <MoneyInput
             initialValue={capEx}
             label='Capital Expenditures'
             onChangeHandler={changeCapEx}
-            onHelpClick={() => {
-              setModalOpen(true);
-              setModalText('Big repairs like roof, flooring, water heater, plumbing, etc.');
-            }}
+            onHelpClick={getModalCallback('Capital Expenditures are big repairs like roof, flooring, water heater, plumbing, etc. It is recommended to allocate 5% of monthly rent for Cap Ex.')}
             />
 
           <Modal transparent visible={modalOpen} animationType='slide'>
