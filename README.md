@@ -30,7 +30,7 @@ TODOs:
 * [x] currency formatting fileds
 * [x] make calculations working without submit button
 * [x] (?) next to labels
-* [ ] add (?) descriptions where needed
+* [x] add (?) descriptions where needed
 * [ ] polish
     * [ ] polish headers
     * [ ] polish modal
