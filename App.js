@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { StyleSheet, Text, View, ScrollView, Keyboard, Dimensions, Modal, TouchableWithoutFeedback } from 'react-native';
 import MoneyInput from './components/MoneyInput';
 import {MaterialIcons} from '@expo/vector-icons';
+import 'intl';
+import 'intl/locale-data/jsonp/en';
 
 export default function App() {
   const [cashFlow, setCashFlow] = useState('$400');

@@ -27,6 +27,7 @@
       "buildNumber": "1.0.0"
     },
     "android": {
+      "package": "net.jj09.reic",
       "versionCode": 1
     }
   }

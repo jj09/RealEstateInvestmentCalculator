@@ -31,7 +31,7 @@ TODOs:
 * [x] make calculations working without submit button
 * [x] (?) next to labels
 * [x] add (?) descriptions where needed
-* [ ] create an icon
+* [x] create an icon
 * [ ] polish
     * [ ] polish headers
     * [ ] polish modal
@@ -40,14 +40,16 @@ TODOs:
     * [ ] status bar color
     * [ ] beautify icon (use app colors)
 * publish
-    * [ ] App Store (https://www.youtube.com/watch?v=6IPr7oOugTs)
+    * [x] App Store ([docs](https://docs.expo.io/distribution/building-standalone-apps/))
     * [ ] Google Play
-    * [ ] Setup Codepush with App Center for updates without store release 
+    * [ ] [Configure OTA Updates](https://docs.expo.io/guides/configuring-ota-updates/)
  
 ## v1.1 monetization
 
+* [The Ultimate Guide To Mobile In-App Purchases Optimization](https://instabug.com/blog/mobile-in-app-purchases/)
 * Google ads (admob)?
 * fb ads?
+* freemium: $0.99 for no-ads experience
 
 ## v1.2 loan customization
 
