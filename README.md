@@ -51,7 +51,12 @@ TODOs:
 * fb ads?
 * freemium: $0.99 for no-ads experience
 
-## v1.2 loan customization
+## v1.2
+
+* make (?) wider
+* add button to autofill vacancy, repairs, capex at 5%
+
+## v1.3 loan customization
 
 - add splashscreen
 - enable choosing loan length (15 or 30 years)
@@ -66,6 +71,14 @@ TODOs:
 - by email?    
 - send to dropbox as spreadsheet?
 - send to gdocs as spreadsheet?
+
+# v3. add simple, advanced tabs for calculations
+
+- remove repairs/vacancies/capex from simple?
+- advanced will have additionally:
+    * ???
+    * ???
+    * ???
 
 ## v99. Backlog
 
