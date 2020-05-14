@@ -44,17 +44,23 @@ TODOs:
     * [ ] Google Play
     * [ ] [Configure OTA Updates](https://docs.expo.io/guides/configuring-ota-updates/)
  
+## v1.0.1
+
+* [x] make (?) wider
+* [ ] fix math/alignment of close button in toggle popup
+* [ ] update dependecies, and get rid of this annyoing warning
+
 ## v1.1 monetization
 
 * [The Ultimate Guide To Mobile In-App Purchases Optimization](https://instabug.com/blog/mobile-in-app-purchases/)
 * Google ads (admob)?
 * fb ads?
 * freemium: $0.99 for no-ads experience
+* donate button: $5, $10, $15
 
 ## v1.2
 
-* make (?) wider
-* add button to autofill vacancy, repairs, capex at 5%
+* [ ] add button to autofill vacancy, repairs, capex at 5%
 
 ## v1.3 loan customization
 

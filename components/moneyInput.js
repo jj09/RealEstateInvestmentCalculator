@@ -63,13 +63,15 @@ const styles = StyleSheet.create({
     width: 300,
   },
   modalToggle: {
-      borderWidth: 1,
-      borderColor: '#ddd',
-      color: '#ddd',
-      padding: 2,
-      borderRadius: 5,
-      marginLeft: 10,
-      alignSelf: 'center',
+    borderWidth: 1,
+    borderColor: '#ddd',
+    color: '#ddd',
+    padding: 2,
+    paddingLeft: 5,
+    paddingRight: 5,
+    borderRadius: 5,
+    marginLeft: 10,
+    alignSelf: 'center',
   },
 });
   
