@@ -54,10 +54,11 @@ TODOs:
 
 * [x] [The Ultimate Guide To Mobile In-App Purchases Optimization](https://instabug.com/blog/mobile-in-app-purchases/)
 * [ ] Google ads (admob)
-    * [ ] [Google Admob - use react-native-admob to add google admob advertisement to react-native](https://dev-yakuza.github.io/en/react-native/react-native-admob/)
-    * [ ] [Firebase Admob - let's use react-native-firebase library to display Google Admob](https://dev-yakuza.github.io/en/react-native/react-native-firebase-admob/)
-    * [ ] [Expo Admob](https://docs.expo.io/versions/latest/sdk/admob/)
-    * [ ] [Adding Admob Ads to your React Native Expo Project](https://www.youtube.com/watch?v=aZOv_mxeu68)
+    * [x] [Adding Admob Ads to your React Native Expo Project](https://www.youtube.com/watch?v=aZOv_mxeu68) - the best instructions! Thanks [MissCoding](https://www.youtube.com/channel/UCwJWXcI12lhcorzG7Vrf2zw)
+    * [x] [Expo Admob](https://docs.expo.io/versions/latest/sdk/admob/)
+    * for reference
+        * [x] [Google Admob - use react-native-admob to add google admob advertisement to react-native](https://dev-yakuza.github.io/en/react-native/react-native-admob/)
+        * [x] [Firebase Admob - let's use react-native-firebase library to display Google Admob](https://dev-yakuza.github.io/en/react-native/react-native-firebase-admob/)
 * [ ] fb ads?
 * [ ] freemium: $0.99 for no-ads experience
 * [ ] donate button: $1, $2, $3, $5, $10, $15 (maybe slider?)
