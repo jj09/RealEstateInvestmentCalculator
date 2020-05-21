@@ -47,7 +47,7 @@ TODOs:
 ## v1.0.1
 
 * [x] make (?) wider
-* [ ] fix math/alignment of close button in toggle popup
+* [x] fix math/alignment of close button in toggle popup
 * [ ] update dependecies, and get rid of this annyoing warning
 
 ## v1.1 monetization
