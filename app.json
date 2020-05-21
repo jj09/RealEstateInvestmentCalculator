@@ -24,12 +24,18 @@
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "net.jj09.reic",
-      "buildNumber": "1.0.1"
+      "buildNumber": "1.0.1",
+      "config": {
+        "googleMobileAdsAppId": "ca-app-pub-8304240234233416~2600883778"
+      }
     },
     "android": {
       "package": "net.jj09.reic",
       "permissions": [],
-      "versionCode": 3
+      "versionCode": 3,
+      "config": {
+        "googleMobileAdsAppId": "ca-app-pub-8304240234233416~1624705847"
+      }
     }    
   }
 }

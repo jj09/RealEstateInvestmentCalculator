@@ -1,11 +1,18 @@
 import React, { useState } from 'react';
-import { StyleSheet, Text, View, ScrollView, Keyboard, Dimensions, Modal, TouchableWithoutFeedback } from 'react-native';
+import { StyleSheet, Text, View, ScrollView, Platform, Dimensions, Modal, TouchableWithoutFeedback } from 'react-native';
 import MoneyInput from './components/MoneyInput';
 import {MaterialIcons} from '@expo/vector-icons';
 import 'intl';
 import 'intl/locale-data/jsonp/en';
 
+import { AdMobBanner } from 'expo-ads-admob';
+
 export default function App() {
+  // ads init
+  const admobAndroidId = "ca-app-pub-8304240234233416/3133228630";
+  const admobIosId = "ca-app-pub-8304240234233416/4155500417";
+  const adMobAdId = Platform.OS === 'ios' ? admobIosId : admobAndroidId;
+  
   const [cashFlow, setCashFlow] = useState('$400');
   const [roi, setRoi] = useState('$206,000');
   const [modalOpen, setModalOpen] = useState(false);
@@ -107,6 +114,11 @@ export default function App() {
       <View style={styles.results}>
         <Text style={styles.subheader}>Cash flow: {cashFlow}</Text>
         <Text style={styles.subheader}>ROI (30 years): {roi}</Text>
+        <AdMobBanner
+          bannerSize="banner"
+          adUnitID={adMobAdId}
+          servePersonalizedAds={false}
+          />
       </View>
       <ScrollView style={styles.scrollView}>
         <View style={styles.container}>
