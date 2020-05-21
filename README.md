@@ -52,11 +52,13 @@ TODOs:
 
 ## v1.1 monetization
 
-* [The Ultimate Guide To Mobile In-App Purchases Optimization](https://instabug.com/blog/mobile-in-app-purchases/)
-* Google ads (admob)?
-* fb ads?
-* freemium: $0.99 for no-ads experience
-* donate button: $5, $10, $15
+* [x] [The Ultimate Guide To Mobile In-App Purchases Optimization](https://instabug.com/blog/mobile-in-app-purchases/)
+* [ ] Google ads (admob)
+    * [ ] [Google Admob - use react-native-admob to add google admob advertisement to react-native](https://dev-yakuza.github.io/en/react-native/react-native-admob/)
+    * [ ] [Firebase Admob - let's use react-native-firebase library to display Google Admob](https://dev-yakuza.github.io/en/react-native/react-native-firebase-admob/)
+* [ ] fb ads?
+* [ ] freemium: $0.99 for no-ads experience
+* [ ] donate button: $1, $2, $3, $5, $10, $15 (maybe slider?)
 
 ## v1.2
 
