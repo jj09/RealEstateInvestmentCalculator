@@ -22,13 +22,13 @@ export default function MoneyInput({initialValue, label, onChangeHandler, onHelp
         <View>
           
           <View style={styles.labelContainer}>
-            <Text style={styles.label}>{label}</Text>
             {onHelpClick && <MaterialIcons
-                name='question'
-                size={12}
+                name='help'
+                size={20}
                 style={styles.modalToggle}
                 onPress={onHelpClick}
                 />}
+            <Text style={styles.label}>{label}</Text>
           </View>
           <TextInput 
             style={styles.input} 
@@ -63,16 +63,8 @@ const styles = StyleSheet.create({
     width: 300,
   },
   modalToggle: {
-    borderWidth: 1,
-    borderColor: '#ddd',
-    color: '#ddd',
-    padding: 2,
-    paddingLeft: 5,
-    paddingRight: 5,
-    borderRadius: 5,
-    marginLeft: 10,
-    alignSelf: 'center',
-    textAlign: 'center',
+    color: '#938598',
+    marginRight: 7,
   },
 });
   

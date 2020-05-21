@@ -48,7 +48,7 @@ TODOs:
 
 * [x] make (?) wider
 * [x] fix math/alignment of close button in toggle popup
-* [ ] update dependecies, and get rid of this annyoing warning
+* [x] get rid of this annyoing warning
 
 ## v1.1 monetization
 
@@ -56,6 +56,8 @@ TODOs:
 * [ ] Google ads (admob)
     * [ ] [Google Admob - use react-native-admob to add google admob advertisement to react-native](https://dev-yakuza.github.io/en/react-native/react-native-admob/)
     * [ ] [Firebase Admob - let's use react-native-firebase library to display Google Admob](https://dev-yakuza.github.io/en/react-native/react-native-firebase-admob/)
+    * [ ] [Expo Admob](https://docs.expo.io/versions/latest/sdk/admob/)
+    * [ ] [Adding Admob Ads to your React Native Expo Project](https://www.youtube.com/watch?v=aZOv_mxeu68)
 * [ ] fb ads?
 * [ ] freemium: $0.99 for no-ads experience
 * [ ] donate button: $1, $2, $3, $5, $10, $15 (maybe slider?)
