@@ -178,7 +178,7 @@ export default function App() {
             />
 
           <Modal transparent visible={modalOpen} animationType='slide'>
-              <TouchableWithoutFeedback onPress={() => setModalOpen(false)} style={{backgroundColor: 'red'}}>
+              <TouchableWithoutFeedback onPress={() => setModalOpen(false)}>
                   <View style={styles.modalContent}>
                       <MaterialIcons
                           name='close'
@@ -246,7 +246,8 @@ const styles = StyleSheet.create({
   modalClose: {
     marginTop: 5,
     marginBottom: 10,
-    marginLeft: Dimensions.get('window').width/2,
+    marginRight: 5,
+    alignSelf: 'flex-end',
   },
   modalText: {
     color: '#78a4c3',

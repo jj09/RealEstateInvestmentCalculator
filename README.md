@@ -42,7 +42,7 @@ TODOs:
 * publish
     * [x] App Store ([docs](https://docs.expo.io/distribution/building-standalone-apps/))
     * [x] Google Play
-    * [ ] [Configure OTA Updates](https://docs.expo.io/guides/configuring-ota-updates/)
+    * [x] [Configure OTA Updates](https://docs.expo.io/guides/configuring-ota-updates/) = turned on by default, no action required <3
  
 ## v1.0.1
 
