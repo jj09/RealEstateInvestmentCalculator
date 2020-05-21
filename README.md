@@ -41,7 +41,7 @@ TODOs:
     * [ ] beautify icon (use app colors)
 * publish
     * [x] App Store ([docs](https://docs.expo.io/distribution/building-standalone-apps/))
-    * [ ] Google Play
+    * [x] Google Play
     * [ ] [Configure OTA Updates](https://docs.expo.io/guides/configuring-ota-updates/)
  
 ## v1.0.1
