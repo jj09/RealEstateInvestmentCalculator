@@ -114,14 +114,9 @@ export default function App() {
       <View style={styles.results}>
         <Text style={styles.subheader}>Cash flow: {cashFlow}</Text>
         <Text style={styles.subheader}>ROI (30 years): {roi}</Text>
-        <AdMobBanner
-          bannerSize="banner"
-          adUnitID={adMobAdId}
-          servePersonalizedAds={false}
-          />
       </View>
       <ScrollView style={styles.scrollView}>
-        <View style={styles.container}>
+        <View>
           <MoneyInput
             initialValue={purchasePrice}
             label='Purchase Price'
@@ -203,8 +198,12 @@ export default function App() {
               </TouchableWithoutFeedback>
           </Modal>
         </View>
-
       </ScrollView>
+      <AdMobBanner
+          bannerSize="banner"
+          adUnitID={adMobAdId}
+          servePersonalizedAds={false}
+          />
     </View>
   );
 }
@@ -213,10 +212,10 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 20,
+    paddingBottom: 0,
     backgroundColor: '#090f18',
     alignItems: 'center',
     justifyContent: 'center',
-    paddingBottom: 50,
   },
   header: {
     fontSize: 22,
@@ -236,6 +235,7 @@ const styles = StyleSheet.create({
     margin: 0,
     flex: 1,
     width: '100%',
+    marginBottom: 10,
   },
   results: {
     flexDirection: 'column',

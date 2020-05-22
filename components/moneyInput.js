@@ -19,8 +19,7 @@ export default function MoneyInput({initialValue, label, onChangeHandler, onHelp
     };
     
     return (
-        <View>
-          
+        <View style={styles.moneyInputContainer}>
           <View style={styles.labelContainer}>
             {onHelpClick && <MaterialIcons
                 name='help'
@@ -60,11 +59,15 @@ const styles = StyleSheet.create({
     padding: 10,
     fontSize: 18,
     borderRadius: 6,
-    width: 300,
+    width: '100%',
   },
   modalToggle: {
     color: '#938598',
     marginRight: 7,
+  },
+  moneyInputContainer: {
+    alignSelf:'center', 
+    width: '90%',
   },
 });
   
