@@ -59,15 +59,30 @@ TODOs:
     * for reference
         * [x] [Google Admob - use react-native-admob to add google admob advertisement to react-native](https://dev-yakuza.github.io/en/react-native/react-native-admob/)
         * [x] [Firebase Admob - let's use react-native-firebase library to display Google Admob](https://dev-yakuza.github.io/en/react-native/react-native-firebase-admob/)
-* [ ] fb ads?
-* [ ] freemium: $0.99 for no-ads experience
-* [ ] donate button: $1, $2, $3, $5, $10, $15 (maybe slider?)
+* [ ] Facebook ads
+    * [ ] [Facebook Audience Network vs AdMob Review 2020](https://blognife.com/2017/10/23/facebook-audience-network-vs-admob-cpm-rates-payment-earnings-report/)
+    * [ ] [FacebookAds at Expo docs](https://docs.expo.io/versions/latest/sdk/facebook-ads/)
+    * [ ] [Facebook Ads Tutorial 2020 - How to Create Facebook Ads For Beginners (COMPLETE GUIDE)](https://www.youtube.com/watch?v=1iZl0bCyDPQ)
+    * [ ] [React Native Redux Tutorial #16: Setting up Facebook Ads](https://www.youtube.com/watch?v=pywOxaW0x6M&list=PL06z42zB6YZ-9CQDX015uaeqMcSErKbes&index=16)
+    * [ ] [React Native Redux Tutorial #17: Facebook Interstitial Ad Setup](https://www.youtube.com/watch?v=aUqAg2EdnD0&list=PL06z42zB6YZ-9CQDX015uaeqMcSErKbes&index=17)
+    * [ ] [React Native Redux Tutorial #18: Facebook Banner Ad Setup](https://www.youtube.com/watch?v=lHnH584JJZY&list=PL06z42zB6YZ-9CQDX015uaeqMcSErKbes&index=18)
 
 ## v1.2
 
-* [ ] add button to autofill vacancy, repairs, capex at 5%
+* [ ] refactor
+    * [ ] move styles
+    * [ ] extract main component
+    * [ ] extract ad component
+    * [ ] [React Native Redux Tutorial with Expo](https://www.youtube.com/watch?v=KHzc5PjFg0U&list=PL06z42zB6YZ-9CQDX015uaeqMcSErKbes)
+    * [ ] [Redux in React Native in 1 hour - ReactNativeTutorial.net](https://www.youtube.com/watch?v=Hn2acItzQBk)
+* [ ] add button to autofill (add (?) with explanation how autofill works)
+    - tax at 1%/12 of purchase price
+    - insurance at 0.1%/12 of purchase price
+    - vacancy at 5% rent
+    - repairs at 5% rent
+    - capex at 5% rent (if HOA=0), otherwise 0
 
-## v1.3 loan customization
+## v1.3 loan customization (advanced tab? not yet?)
 
 - add splashscreen
 - enable choosing loan length (15 or 30 years)
@@ -76,6 +91,16 @@ TODOs:
 - [maybe] downpayment as % of purchase price(?)
 - purchase price rename to total investment
 
+## v1.4 monetization & marketing
+
+* [ ] freemium: $0.99 for no-ads experience
+* [ ] buy facebook ads to promote app
+* [ ] donate button: $1, $2, $3, $5, $10, $15 (maybe slider?)
+* [ ] figure out other marketing channels
+    * [ ] Buy Google Ads?
+    * [ ] Promote on bigger pockets forum?
+
+
 ## v2. Opportunity to save calculations
 
 - in app?
@@ -83,7 +108,13 @@ TODOs:
 - send to dropbox as spreadsheet?
 - send to gdocs as spreadsheet?
 
-# v3. add simple, advanced tabs for calculations
+## v2.1 add educational section
+
+- Explain how these calculation work
+- Add Quiz?
+- ...
+
+## v3. add simple, advanced tabs for calculations
 
 - remove repairs/vacancies/capex from simple?
 - advanced will have additionally:
@@ -109,3 +140,4 @@ TODOs:
 # references
 
 * [Investment Property ROI spreadsheet](https://docs.google.com/spreadsheets/d/1s7BwjC9fE213bOYVq2m0GkjBO1o4IVzl9MDPqR6a9vo/edit#gid=1795265665)
+* [React Native Tutorial for Beginners by The Net Ninja](https://www.youtube.com/watch?v=ur6I5m2nTvk&list=PL4cUxeGkcC9ixPU-QkScoRBVxtPPzVjrQ)
