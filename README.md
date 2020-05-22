@@ -53,7 +53,7 @@ TODOs:
 ## v1.1 monetization
 
 * [x] [The Ultimate Guide To Mobile In-App Purchases Optimization](https://instabug.com/blog/mobile-in-app-purchases/)
-* [ ] Google ads (admob)
+* [x] Google ads (admob)
     * [x] [Adding Admob Ads to your React Native Expo Project](https://www.youtube.com/watch?v=aZOv_mxeu68) - the best instructions! Thanks [MissCoding](https://www.youtube.com/channel/UCwJWXcI12lhcorzG7Vrf2zw)
     * [x] [Expo Admob](https://docs.expo.io/versions/latest/sdk/admob/)
     * for reference
