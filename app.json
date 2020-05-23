@@ -7,7 +7,7 @@
       "android",
       "web"
     ],
-    "version": "1.0.1",
+    "version": "1.1.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
@@ -24,7 +24,7 @@
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "net.jj09.reic",
-      "buildNumber": "1.0.1",
+      "buildNumber": "1.1.0",
       "config": {
         "googleMobileAdsAppId": "ca-app-pub-8304240234233416~2600883778"
       }
