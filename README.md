@@ -62,10 +62,14 @@ TODOs:
 * [ ] Facebook ads
     * [ ] [Facebook Audience Network vs AdMob Review 2020](https://blognife.com/2017/10/23/facebook-audience-network-vs-admob-cpm-rates-payment-earnings-report/)
     * [ ] [FacebookAds at Expo docs](https://docs.expo.io/versions/latest/sdk/facebook-ads/)
-    * [ ] [Facebook Ads Tutorial 2020 - How to Create Facebook Ads For Beginners (COMPLETE GUIDE)](https://www.youtube.com/watch?v=1iZl0bCyDPQ)
     * [ ] [React Native Redux Tutorial #16: Setting up Facebook Ads](https://www.youtube.com/watch?v=pywOxaW0x6M&list=PL06z42zB6YZ-9CQDX015uaeqMcSErKbes&index=16)
     * [ ] [React Native Redux Tutorial #17: Facebook Interstitial Ad Setup](https://www.youtube.com/watch?v=aUqAg2EdnD0&list=PL06z42zB6YZ-9CQDX015uaeqMcSErKbes&index=17)
     * [ ] [React Native Redux Tutorial #18: Facebook Banner Ad Setup](https://www.youtube.com/watch?v=lHnH584JJZY&list=PL06z42zB6YZ-9CQDX015uaeqMcSErKbes&index=18)
+    * [ ] fix issues
+        * [ ] no ads on android: `currentDeviceHash` is null (but maybe it's just test)
+        * [ ] iOS app is disabled, because fb cannot find it (created support ticket)
+        * [ ] remove `Real Estate Investment Calculator` from Monetization Manager, and keep REIC
+        * [ ] styling (but maybe just test?)
 
 ## v1.2
 
@@ -95,6 +99,7 @@ TODOs:
 
 * [ ] freemium: $0.99 for no-ads experience
 * [ ] buy facebook ads to promote app
+    * [ ] [Facebook Ads Tutorial 2020 - How to Create Facebook Ads For Beginners (COMPLETE GUIDE)](https://www.youtube.com/watch?v=1iZl0bCyDPQ)
 * [ ] donate button: $1, $2, $3, $5, $10, $15 (maybe slider?)
 * [ ] figure out other marketing channels
     * [ ] Buy Google Ads?
@@ -135,7 +140,11 @@ TODOs:
     + roofstock
     + ...
 
-* content marketing: https://designmodo.com/update-emails 
+* content marketing: https://designmodo.com/update-emails
+
+# OTA updates
+
+`expo publish`
 
 # references
 

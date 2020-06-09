@@ -36,6 +36,7 @@
       "config": {
         "googleMobileAdsAppId": "ca-app-pub-8304240234233416~1624705847"
       }
-    }    
+    },
+    "facebookAppId": "1161400640870611"
   }
 }

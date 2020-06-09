@@ -6,6 +6,9 @@ import 'intl';
 import 'intl/locale-data/jsonp/en';
 
 import { AdMobBanner } from 'expo-ads-admob';
+import * as FacebookAds from 'expo-ads-facebook';
+// FacebookAds.AdSettings.addTestDevice(FacebookAds.AdSettings.currentDeviceHash);
+// console.log(Platform.OS, FacebookAds.AdSettings);
 
 export default function App() {
   // ads init
@@ -13,6 +16,11 @@ export default function App() {
   const admobIosId = "ca-app-pub-8304240234233416/4155500417";
   const adMobAdId = Platform.OS === 'ios' ? admobIosId : admobAndroidId;
   
+  // fb ads init
+  const iosPlacementId = "1161400640870611_1161415564202452";
+  const androidPlacementId = "171290390989054_171291250988968";
+  const placementId = Platform.OS === 'ios' ? iosPlacementId : androidPlacementId;
+
   const [cashFlow, setCashFlow] = useState('$400');
   const [roi, setRoi] = useState('$206,000');
   const [modalOpen, setModalOpen] = useState(false);
@@ -204,6 +212,23 @@ export default function App() {
           adUnitID={adMobAdId}
           servePersonalizedAds={false}
           />
+      {/* <View 
+          style={{
+              backgroundColor: 'pink',
+              paddingRight: 70,
+              paddingBottom: 20,
+              paddingTop: 0,
+              width: '100%',
+            }}
+      >
+        <FacebookAds.BannerAd
+          placementId={placementId}
+          type="standard"
+          onPress={() => console.log('click')}
+          onError={error => console.log('error', error)}
+          style={{width: '90%'}}
+        />
+      </View> */}
     </View>
   );
 }
