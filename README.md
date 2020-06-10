@@ -59,12 +59,17 @@ TODOs:
     * for reference
         * [x] [Google Admob - use react-native-admob to add google admob advertisement to react-native](https://dev-yakuza.github.io/en/react-native/react-native-admob/)
         * [x] [Firebase Admob - let's use react-native-firebase library to display Google Admob](https://dev-yakuza.github.io/en/react-native/react-native-firebase-admob/)
+    * [ ] fix issue:
+        * [ ] ERROR_CODE_NO_FILL - [explanation](https://support.google.com/admob/answer/3063564?hl=en&visit_id=637272716882814095-3053485040&rd=1)
+
+## v1.1.1 - make fb ads working
+
 * [ ] Facebook ads
-    * [ ] [Facebook Audience Network vs AdMob Review 2020](https://blognife.com/2017/10/23/facebook-audience-network-vs-admob-cpm-rates-payment-earnings-report/)
-    * [ ] [FacebookAds at Expo docs](https://docs.expo.io/versions/latest/sdk/facebook-ads/)
-    * [ ] [React Native Redux Tutorial #16: Setting up Facebook Ads](https://www.youtube.com/watch?v=pywOxaW0x6M&list=PL06z42zB6YZ-9CQDX015uaeqMcSErKbes&index=16)
-    * [ ] [React Native Redux Tutorial #17: Facebook Interstitial Ad Setup](https://www.youtube.com/watch?v=aUqAg2EdnD0&list=PL06z42zB6YZ-9CQDX015uaeqMcSErKbes&index=17)
-    * [ ] [React Native Redux Tutorial #18: Facebook Banner Ad Setup](https://www.youtube.com/watch?v=lHnH584JJZY&list=PL06z42zB6YZ-9CQDX015uaeqMcSErKbes&index=18)
+    * [x] [Facebook Audience Network vs AdMob Review 2020](https://blognife.com/2017/10/23/facebook-audience-network-vs-admob-cpm-rates-payment-earnings-report/)
+    * [x] [FacebookAds at Expo docs](https://docs.expo.io/versions/latest/sdk/facebook-ads/)
+    * [x] [React Native Redux Tutorial #16: Setting up Facebook Ads](https://www.youtube.com/watch?v=pywOxaW0x6M&list=PL06z42zB6YZ-9CQDX015uaeqMcSErKbes&index=16)
+    * [x] [React Native Redux Tutorial #17: Facebook Interstitial Ad Setup](https://www.youtube.com/watch?v=aUqAg2EdnD0&list=PL06z42zB6YZ-9CQDX015uaeqMcSErKbes&index=17)
+    * [x] [React Native Redux Tutorial #18: Facebook Banner Ad Setup](https://www.youtube.com/watch?v=lHnH584JJZY&list=PL06z42zB6YZ-9CQDX015uaeqMcSErKbes&index=18)
     * [ ] fix issues
         * [ ] no ads on android: `currentDeviceHash` is null (but maybe it's just test)
         * [ ] iOS app is disabled, because fb cannot find it (created support ticket)

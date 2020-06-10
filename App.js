@@ -207,14 +207,15 @@ export default function App() {
           </Modal>
         </View>
       </ScrollView>
-      <AdMobBanner
+      {/* <AdMobBanner
           bannerSize="banner"
           adUnitID={adMobAdId}
           servePersonalizedAds={false}
-          />
-      {/* <View 
+          onDidFailToReceiveAdWithError={err => console.log('error:', err)}
+          /> */}
+      <View 
           style={{
-              backgroundColor: 'pink',
+              // backgroundColor: 'pink',
               paddingRight: 70,
               paddingBottom: 20,
               paddingTop: 0,
@@ -228,7 +229,7 @@ export default function App() {
           onError={error => console.log('error', error)}
           style={{width: '90%'}}
         />
-      </View> */}
+      </View>
     </View>
   );
 }
