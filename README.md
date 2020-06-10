@@ -78,6 +78,7 @@ TODOs:
 
 ## v1.2
 
+* [x] display app/OTA version
 * [ ] refactor
     * [ ] move styles
     * [ ] extract main component

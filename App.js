@@ -4,6 +4,7 @@ import MoneyInput from './components/MoneyInput';
 import {MaterialIcons} from '@expo/vector-icons';
 import 'intl';
 import 'intl/locale-data/jsonp/en';
+import Constants from 'expo-constants';
 
 import { AdMobBanner } from 'expo-ads-admob';
 import * as FacebookAds from 'expo-ads-facebook';
@@ -119,6 +120,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Text style={styles.header}>Real Estate Investment Calculator</Text>
+      <Text style={styles.version}>{Constants.manifest.version}</Text>
       <View style={styles.results}>
         <Text style={styles.subheader}>Cash flow: {cashFlow}</Text>
         <Text style={styles.subheader}>ROI (30 years): {roi}</Text>
@@ -251,6 +253,15 @@ const styles = StyleSheet.create({
     width: '100%',
     textAlign: 'center',
   },
+  version: {
+    fontSize: 10,
+    textAlignVertical: 'top',
+    padding: 0,
+    margin: 0,
+    color: '#78a4c3',
+    width: '100%',
+    textAlign: 'right',
+  },
   subheader: {
     fontSize: 18,
     textAlignVertical: 'top',
@@ -268,6 +279,7 @@ const styles = StyleSheet.create({
     textAlign: 'left',
     width: '100%',
     padding: 5,
+    paddingTop: 0,
   },
   modalContent: {
     flex: 1,
