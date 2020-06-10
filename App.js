@@ -17,7 +17,7 @@ export default function App() {
   const adMobAdId = Platform.OS === 'ios' ? admobIosId : admobAndroidId;
   
   // fb ads init
-  const iosPlacementId = "1161400640870611_1161415564202452";
+  const iosPlacementId = "171290390989054_180817953369631";
   const androidPlacementId = "171290390989054_171291250988968";
   const placementId = Platform.OS === 'ios' ? iosPlacementId : androidPlacementId;
 
@@ -217,17 +217,17 @@ export default function App() {
           style={{
               // backgroundColor: 'pink',
               paddingRight: 70,
-              paddingBottom: 20,
+              paddingBottom: 30,
               paddingTop: 0,
-              width: '100%',
+              marginTop: -30,
+              width: '50%',
+              marginLeft: -Dimensions.get('window').width/1.8,
             }}
       >
         <FacebookAds.BannerAd
           placementId={placementId}
           type="standard"
-          onPress={() => console.log('click')}
-          onError={error => console.log('error', error)}
-          style={{width: '90%'}}
+          onError={error => console.log('fb error', Platform.OS, error)}
         />
       </View>
     </View>
