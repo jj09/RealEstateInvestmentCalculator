@@ -133,6 +133,11 @@ TODOs:
     * ???
     * ???
 
+## v4. enable importing from Redfin or other source and pulling estimated rent by rent estimate in the area
+
+- Usually what you want is when you find property on Redfin, it would be cool to just copy link, and have app to import all metadata (price, taxes, etc.) and estimate rent by some data (zillow?).
+- estimate mortgage by current rates (pull from some public API and cross-sell them)
+
 ## v99. Backlog
 
 - add logging to measure CTR for (?) next to labels
