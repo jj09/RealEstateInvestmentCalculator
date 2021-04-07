@@ -115,7 +115,7 @@ TODOs:
 ## v2. Opportunity to save calculations
 
 - in app?
-- by email?    
+- by email? in PDF like Genius Scan   
 - send to dropbox as spreadsheet?
 - send to gdocs as spreadsheet?
 
