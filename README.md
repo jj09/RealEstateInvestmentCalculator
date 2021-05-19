@@ -1,3 +1,13 @@
+# REIC (Real Estate Investment Calculator)
+
+<img src="assets/icon512.png" width="142" alt="REIC (Real Estate Investment Calculator" />
+
+Real Estate Investment Calculator allows you to quickly analyze property to make investment decision, and comparison with other properties.
+
+<a href="https://apps.apple.com/us/app/reic/id1512907313"><img src="http://drexel.edu/~/media/Images/alumni/Social%20media%20icons/App-Store-Icon.ashx?la=en&hash=0410913BCDF4491F0696B07A5D5123F6EC77971E" width="200px" /></a>
+
+<a href="https://play.google.com/store/apps/details?id=net.jj09.reic&hl=en_US&gl=US"><img src="http://seom.esa.int/files/googleplay_icon.jpg" width="200px" /></a>
+
 # Plan
 
 ## v1. Quick calculation
